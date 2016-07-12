@@ -30,6 +30,9 @@ a:hover, .btn.link:hover {
    color: #C99;
 }
 
+.btn.link.view-more-true:before { content: '/read less/'; }
+.btn.link.view-more-false:before { content: '/read more/'; }
+
 h1 {
    display: inline-block;
    font-family: Garamond, serif;

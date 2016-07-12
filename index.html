@@ -23,7 +23,7 @@
       <li>
          Technical Director,
          <a href="http://omnibpm.com" target="_blank"> Omniscient Cloud Technologies, Inc.</a>
-         <button class="btn link" ng-click="toggle('more_exp')">...</button>
+         <button class="btn link view-more-{{toggleflags.more_exp}}" ng-click="toggle('more_exp')"></button>
       </li>
       <li ng-show="toggleflags.more_exp">
          Creative Developer,
@@ -51,7 +51,7 @@
    <ul>
       <li>
          <a href="http://www.media.mit.edu" target="_blank">MS in in Media Arts &amp; Sciences</a>
-         <button class="btn link" ng-click="toggle('more_ed')">...</button>
+         <button class="btn link view-more-{{toggleflags.more_ed}}" ng-click="toggle('more_ed')"></button>
       </li>
       <li ng-show="toggleflags.more_ed">
          <a href="http://www.inm.ntu.edu.tw" target="_blank">MS in Computer Science</a>
