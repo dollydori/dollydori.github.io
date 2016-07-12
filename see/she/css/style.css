@@ -1,0 +1,37 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak { display: none !important; }
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   padding: 6em 5em;
+   font-size: 14px;
+   font-family: 'helvetica neue', sans-serif;
+   font-weight: 200;
+   line-height: 1.5em;
+   color: #999;
+   background-color: #FEE;
+}
+
+h1 {
+   font-weight: 100;
+   font-size: 3em;
+   line-height: 1em;
+}
+
+h1.head {
+   margin-bottom: 1em;
+}
+
+.p {
+   margin-bottom: 0.5em;
+}
+
+.p.douban {
+   background-color: white;
+   display: inline-block;
+   border: 1px solid #FCC;
+   padding: 5px;
+}

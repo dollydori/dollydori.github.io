@@ -1,0 +1,26 @@
+<html ng-app="app">
+<head>
+   <meta http-equiv="Content-Type" content="text/ html; charset=UTF-8" />
+
+   <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+   <script type="text/javascript" src="js/angular.min.js"></script>
+   <script type="text/javascript" src="js/sichi.js"></script>
+</head>
+<body ng-controller="SichiCtrl">
+   <div ng-cloak class="ng-cloak">
+      <h1 class="head">
+         Sichi
+         <div class="small"></div>
+      </h1>
+
+      <div class="p">{{getAgeStr()}}</div>
+      <div class="p douban">
+         <script type="text/javascript" src="http://www.douban.com/service/badge/143609614/?selection=latest&amp;picsize=small&amp;hideself=on&amp;show=collection&amp;n=9&amp;hidelogo=on&amp;cat=drama%7Cmovie%7Cbook%7Cmusic&amp;columns=3"></script>
+      </div>
+      <div class="p map">
+         <script src="https://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script><script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js" type="text/javascript"></script><script src="https://www.amcharts.com/lib/3/themes/dark.js" type="text/javascript"></script><div id="mapdiv" style="width: 500; height: 250;"></div><div style="width: 500; font-size: 70%; padding: 5px 0; text-align: center; background-color: #535364; margin-top: 1px; color: #B4B4B7;"><a href="https://www.amcharts.com/visited_countries/" style="color: #B4B4B7;">Create your own visited countries map</a> or check out the <a href="https://www.amcharts.com/" style="color: #B4B4B7;">JavaScript Charts</a>.</div><script type="text/javascript">var map = AmCharts.makeChart("mapdiv",{ type: "map", theme: "dark", projection: "mercator", panEventsEnabled : true, backgroundColor : "#535364", backgroundAlpha : 1, zoomControl: { zoomControlEnabled : true }, dataProvider : { map : "worldHigh", getAreasFromMap : true, areas : [ { "id": "FR", "showAsSelected": true }, { "id": "GB", "showAsSelected": true }, { "id": "JP", "showAsSelected": true }, { "id": "TW", "showAsSelected": true } ] }, areasSettings : { autoZoom : true, color : "#B4B4B7", colorSolid : "#84ADE9", selectedColor : "#84ADE9", outlineColor : "#666666", rollOverColor : "#9EC2F7", rollOverOutlineColor : "#000000" } }); </script>
+      </div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<html ng-app="app">
+<head>
+   <meta http-equiv="Content-Type" content="text/ html; charset=UTF-8" />
+
+   <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+   <script type="text/javascript" src="js/angular.min.js"></script>
+   <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body ng-controller="MainCtrl" class="{{style.bgclass}}">
+   <div ng-mouseenter="turnOffLight()" ng-mouseleave="turnOnLight()">
+      <h1>Dori T. Lin</h1>
+      <h2>Web, Human-Computer Interaction, Parenting</h2>
+   </div>
+
+   <ul>
+      <li><i class="icon icon-email"></i>dori@doril.in</li>
+      <li><i class="icon icon-locationcity"></i><a href="https://goo.gl/maps/8XrTuiYDr2D2" target="_blank">Taipei, Taiwan</a></li>
+      <li><i class="icon icon-voicemail"></i>+1 617 229 5088</li>
+   </ul>
+
+   <ul>
+      <li>
+         Technical Director,
+         <a href="http://omnibpm.com" target="_blank"> Omniscient Cloud Technologies, Inc.</a>
+         <button class="btn link" ng-click="toggle('more_exp')">...</button>
+      </li>
+      <li ng-show="toggleflags.more_exp">
+         Creative Developer,
+         <a href="http://www.wk.com" target="_blank">Wieden+Kennedy</a> Shanghai
+      </li>
+      <li ng-show="toggleflags.more_exp">
+         Ux Prototype Developer /contract,
+         <a href="http://www.ideo.com" target="_blank">IDEO</a> Shanghai
+      </li>
+      <li ng-show="toggleflags.more_exp">
+         Co-founder &amp; Design Director, Plaxie Inc.
+      </li>
+      <li ng-show="toggleflags.more_exp">
+         Research Assistant,
+         <a href="http://living.media.mit.edu" target="_blank">Speech + Mobility Group</a>,
+         <a href="http://www.media.mit.edu" target="_blank">MIT Media Lab</a>
+      </li>
+      <li ng-show="toggleflags.more_exp">
+         Research Assistant,
+         <a href="http://mll.csie.ntu.edu.tw" target="_blank">UbiComp Lab</a>,
+         <a href="https://www.csie.ntu.edu.tw" target="_blank">NTU CSIE</a>
+      </li>
+   </ul>
+
+   <ul>
+      <li>
+         <a href="http://www.media.mit.edu" target="_blank">MS in in Media Arts &amp; Sciences</a>
+         <button class="btn link" ng-click="toggle('more_ed')">...</button>
+      </li>
+      <li ng-show="toggleflags.more_ed">
+         <a href="http://www.inm.ntu.edu.tw" target="_blank">MS in Computer Science</a>
+      </li>
+      <li ng-show="toggleflags.more_ed">
+         <a href="https://www.csie.ntu.edu.tw" target="_blank">BS in Computer Science and Information Engineering</a>
+      </li>
+   </ul>
+
+   <!--
+   <ul>
+      <li><a href="http://note.doril.in" target="_blank">Notes</a> in traditional Chinese</li>
+   </ul>
+   -->
+</body>
+</html>

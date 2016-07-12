@@ -1,0 +1,93 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   padding: 6em 5em;
+   font-size: 14px;
+   font-family: 'helvetica neue', sans-serif;
+   font-weight: 200;
+   line-height: 1.5em;
+   color: black;
+   background-color: #EEE;
+}
+
+body.light-on {
+   background-color: #EEE;
+}
+
+body.light-off {
+   background-color: black;
+}
+
+a, .btn.link {
+   color: black;
+   text-decoration: none;
+}
+
+a:hover, .btn.link:hover {
+   color: #C99;
+}
+
+h1 {
+   display: inline-block;
+   font-family: Garamond, serif;
+   font-weight: 100;
+   font-size: 1.05em;
+   line-height: 1em;
+   color: #666;
+}
+
+h2 {
+   display: inline-block;
+   font-family: Garamond, serif;
+   font-weight: 100;
+   font-size: 1.05em;
+   line-height: 2em;
+   color: #666;
+}
+
+h2:before {
+   content: '\2715\00A0';
+   color: #CCC;
+}
+
+.light-off h1 { color: #CCC; }
+.light-off h2 { color: #CCC; }
+.light-off h2:before { color: #333; }
+
+ul {
+   list-style: none;
+   margin-top: 1em;
+}
+
+.btn.link {
+   border: 0;
+   background-color: transparent;
+   cursor: pointer;
+}
+
+i.icon {
+   display: inline-block;
+   width: 1em;
+   height: 1em;
+   background-size: contain;
+   background-position: center;
+   background-color: transparent;
+   vertical-align: middle;
+   margin-right: 0.5em;
+   color: red;
+}
+
+i.icon.icon-email {
+   background-image: url(../imgs/icon/ic_email_black_24px.svg);
+}
+
+i.icon.icon-locationcity {
+   background-image: url(../imgs/icon/ic_location_city_black_24px.svg);
+}
+
+i.icon.icon-voicemail {
+   background-image: url(../imgs/icon/ic_voicemail_black_24px.svg);
+}
