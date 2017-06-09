@@ -5,16 +5,16 @@
 
 body {
    padding: 6em 5em;
-   font-size: 14px;
+   font-size: 18px;
    font-family: 'helvetica neue', sans-serif;
    font-weight: 200;
-   line-height: 1.5em;
+   line-height: 1.8em;
    color: black;
-   background-color: #EEE;
+   background-color: white;
 }
 
 body.light-on {
-   background-color: #EEE;
+   background-color: white;
 }
 
 body.light-off {
@@ -27,7 +27,7 @@ a, .btn.link {
 }
 
 a:hover, .btn.link:hover {
-   color: #C99;
+   color: #F66;
 }
 
 .btn.link.view-more-true:before { content: '/read less/'; }
